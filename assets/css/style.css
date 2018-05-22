@@ -9,37 +9,64 @@ body {
 }
 
 #title {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
-    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    color: #D7F75B;
+    background: #472C1B;
+    padding: 10px;
 }
 
 #instructions {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
-    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background: #9BE564;
+    color: #472C1B;
+    padding: 10px;
 }
 
 #randNumber {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
-    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background: #D7F75B;
+    color: #472C1B;
+    padding: 10px;
 }
 
 #scoreboard {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
-    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background: #CFB53B;
+    color: #472C1B;
+    padding: 10px;
 }
 
 #options {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
-    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background: #7D451B;
+    padding: 10px;
 }
 
 #currentPoints {
-    margin: 0 auto;
+    margin: 10px auto;
     width: 80%;
-    border: solid 2px black;
+    border-radius: 25px;
+    text-align: center;
+    background: #472C1B;
+    color: #D7F75B;
+    padding: 10px;
+}
+
+#optionOne {
+    float: left;
 }
