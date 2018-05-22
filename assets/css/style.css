@@ -1,0 +1,45 @@
+body {
+    background-image: url("../images/background.png");
+    background-color: black;
+ }
+
+#wrapper {
+    margin: 0 auto;
+    width: 75%;
+}
+
+#title {
+    margin: 0 auto;
+    width: 80%;
+    border: solid 2px black;
+}
+
+#instructions {
+    margin: 0 auto;
+    width: 80%;
+    border: solid 2px black;
+}
+
+#randNumber {
+    margin: 0 auto;
+    width: 80%;
+    border: solid 2px black;
+}
+
+#scoreboard {
+    margin: 0 auto;
+    width: 80%;
+    border: solid 2px black;
+}
+
+#options {
+    margin: 0 auto;
+    width: 80%;
+    border: solid 2px black;
+}
+
+#currentPoints {
+    margin: 0 auto;
+    width: 80%;
+    border: solid 2px black;
+}
