@@ -59,6 +59,14 @@ body {
 }
 
 #options {
+    padding: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    -ms-flex-direction: column;
+    -webkit-flex-flow: row wrap; 
+    flex-flow: row wrap; 
+    display: -webkit-box;
     display: flex;
     margin: 10px auto;
     width: 80%;
@@ -70,7 +78,11 @@ body {
 
 /* Option One click effects */
         #optionOne {
-        position: relative;
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: 1.2483; 
+        width: 200px; 
+        margin: .5vw; 
         border: none;
         font-size: 28px;
         text-align: center;
@@ -84,8 +96,6 @@ body {
         #optionOne:after {
         content: "";
         background: #D7F75B;
-        display: block;
-        position: absolute;
         padding-top: 300%;
         padding-left: 350%;
         margin-left: -20px!important;
@@ -104,7 +114,11 @@ body {
 /* Option Two click effects */
 
     #optionTwo {
-        position: relative;
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: 1.3344;
+        width: 200px; 
+        margin: .5vw; 
         border: none;
         font-size: 28px;
         text-align: center;
@@ -118,8 +132,6 @@ body {
     #optionTwo:after {
         content: "";
         background: #D7F75B;
-        display: block;
-        position: absolute;
         padding-top: 300%;
         padding-left: 350%;
         margin-left: -20px!important;
@@ -137,7 +149,11 @@ body {
 
 /* Option three click */
     #optionThree {
-        position: relative;
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: 1.0534; 
+        width: 200px; 
+        margin: .5vw; 
         border: none;
         font-size: 28px;
         text-align: center;
@@ -151,8 +167,6 @@ body {
     #optionThree:after {
         content: "";
         background: #D7F75B;
-        display: block;
-        position: absolute;
         padding-top: 300%;
         padding-left: 350%;
         margin-left: -20px!important;
@@ -170,7 +184,11 @@ body {
 
 /* option four click */
     #optionFour {
-        position: relative;
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: 0.9704; 
+        width: 200px; 
+        margin: .5vw; 
         border: none;
         font-size: 28px;
         text-align: center;
@@ -184,8 +202,6 @@ body {
     #optionFour:after {
         content: "";
         background: #D7F75B;
-        display: block;
-        position: absolute;
         padding-top: 300%;
         padding-left: 350%;
         margin-left: -20px!important;
@@ -199,4 +215,9 @@ body {
         margin: 0;
         opacity: 1;
         transition: 0s
+    }
+
+    #options img {
+        width: 100%; 
+        height: auto; 
     }

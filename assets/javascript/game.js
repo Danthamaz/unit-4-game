@@ -9,9 +9,9 @@
 // Wrapper function to only load JavaScript after page loads
 $(document).ready(function(){
 
-    // Generates random number between 19-120 and appends it to the DIV #randNumber
+    // Generates random number between 19-120 and appends it to the DIV #goalNumber
     var selectedNumber = Math.floor(Math.random() * 102) + 19;
-    $("#randNumber").append(selectedNumber);
+    $("#goalNumber").append(selectedNumber);
 
     // Generates random number betwen 1-12 for gold pieces 
     var iconOneNumber = Math.floor(Math.random() * 12) + 1;
@@ -30,7 +30,7 @@ $(document).ready(function(){
     // Reset function to be called on as needed... resets all numbers
     function reset() {
         selectedNumber = Math.floor(Math.random() * 102) + 19;
-        $("#randNumber").text(selectedNumber);
+        $("#goalNumber").text(selectedNumber);
 
         iconOneNumber = Math.floor(Math.random() * 12) + 1;
         iconTwoNumber = Math.floor(Math.random() * 12) + 1;
@@ -75,6 +75,42 @@ $(document).ready(function(){
             $("#instructions").text("You lost this round, but try again! All numbers have been randomnly generated for you.")
         }
     })
+
+    $("#optionThree").on("click", function(){
+
+        // Adds the value of this icon to the total score
+        totalScore = totalScore + iconThreeNumber;
+        $("#totalScore").text(totalScore);
+        // If/Else statement to compare current score to selected number
+        if (totalScore == selectedNumber) {
+            wins++;
+            reset();
+            $("#instructions").text("You won! Now try to play again, all numbers have been randomly generated for you.")
+        } else if (totalScore > selectedNumber) {
+            losses++;
+            reset();
+            $("#instructions").text("You lost this round, but try again! All numbers have been randomnly generated for you.")
+        }
+    })
+
+    $("#optionFour").on("click", function(){
+
+        // Adds the value of this icon to the total score
+        totalScore = totalScore + iconFourNumber;
+        $("#totalScore").text(totalScore);
+        // If/Else statement to compare current score to selected number
+        if (totalScore == selectedNumber) {
+            wins++;
+            reset();
+            $("#instructions").text("You won! Now try to play again, all numbers have been randomly generated for you.")
+        } else if (totalScore > selectedNumber) {
+            losses++;
+            reset();
+            $("#instructions").text("You lost this round, but try again! All numbers have been randomnly generated for you.")
+        }
+    })
+
+
 
     
 });
