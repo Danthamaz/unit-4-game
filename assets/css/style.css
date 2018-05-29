@@ -57,7 +57,7 @@ body {
     padding: 10px;
 }
 
-#currentPoints {
+#currentScore {
     margin: 10px auto;
     width: 80%;
     border-radius: 25px;
@@ -67,6 +67,135 @@ body {
     padding: 10px;
 }
 
-#optionOne {
-    float: left;
+/* Option One click effects */
+        #optionOne {
+        position: relative;
+        border: none;
+        font-size: 28px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        }
+
+        #optionOne:after {
+        content: "";
+        background: #D7F75B;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+        }
+
+        #optionOne:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+        }
+
+/* Option Two click effects */
+
+#optionTwo {
+    position: relative;
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#optionTwo:after {
+    content: "";
+    background: #D7F75B;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#optionTwo:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+/* Option three click */
+    #optionThree {
+        position: relative;
+        border: none;
+        font-size: 28px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+    #optionThree:after {
+        content: "";
+        background: #D7F75B;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+    #optionThree:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
+
+    /* option four click */
+#optionFour {
+    position: relative;
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#optionFour:after {
+    content: "";
+    background: #D7F75B;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#optionFour:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
 }
