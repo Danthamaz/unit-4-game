@@ -20,11 +20,13 @@ $(document).ready(function(){
     var iconFourNumber = Math.floor(Math.random() * 12) + 1;
 
     // Variables for scores
-    var wins;
-    var losses;
+    var wins = 0;
+    var losses = 0;
     var totalScore = 0;
 
     $("#totalScore").text(totalScore);
+    $("#winCount").text(wins);
+    $("#lossCount").text(losses);
     
 
     // Reset function to be called on as needed... resets all numbers
@@ -38,7 +40,10 @@ $(document).ready(function(){
         iconFourNumber = Math.floor(Math.random() * 12) + 1;
 
         totalScore = 0;
+
         $("#totalScore").text(totalScore);
+        $("#winCount").text(wins);
+        $("#lossCount").text(losses);
     }
 
     // On click event for first option
